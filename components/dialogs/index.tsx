@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import { LeadForm } from "./lead-form";
+import ThanksDialog from "./whatsapp-join"
 
 export default function Dialogs() {
     const [isMounted, setIsMounted] = React.useState<boolean>(false);
@@ -15,6 +16,7 @@ export default function Dialogs() {
     return (
         <>
             <LeadForm />
+            <ThanksDialog />
         </>
     );
 }

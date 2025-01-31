@@ -1,40 +1,32 @@
-import { section } from "framer-motion/client";
 import Image from "next/image";
 
 export default function Books() {
     return (
-        <section className="flex flex-col items-center justify-center mt-10 md:mt-20">
-            <h1 className="text-2xl">Book</h1>
+        <section className="bg-gray-100 flex flex-col items-center justify-center mt-10 md:mt-20 py-4" id="book">
+            <h1 className="text-4xl">Book</h1>
             <div className="flex flex-col items-center py-12 px-4 md:flex-row md:justify-center md:gap-12">
                 <div className="relative w-64 h-80 md:w-80 md:h-96">
                     <Image
-                        src="/do-epic-shit.png"
+                        src="/aseem-book.png"
                         alt="Do Epic Shit Book Cover"
                         layout="fill"
                         objectFit="contain"
                     />
                 </div>
                 <div className="text-center md:text-left max-w-lg">
-                    <h2 className="text-2xl md:text-3xl font-bold text-gray-900">DO EPIC SHIT</h2>
+                    <h2 className="text-2xl md:text-3xl font-bold text-gray-900">51 trading strategies</h2>
                     <p className="mt-4 text-gray-600">
-                        This is a book to be read, and re-read, a book whose lines you will
-                        underline and think about again and again, a book you will give your
-                        family and your friends and strangers.
+                        A practical guide covering diverse trading techniques, risk management, and market insights for traders of all levels.
                     </p>
                     <div className="mt-4 flex flex-col items-center md:items-start">
-                        <Image
-                            src="/signature.png"
-                            alt="Ankur Warikoo Signature"
-                            width={120}
-                            height={40}
-                        />
-                        <p className="mt-2 font-semibold text-gray-900">ankur warikoo</p>
+
+                        <p className="mt-2 font-semibold text-gray-900">Aseem Singhal</p>
                     </div>
                     <a
-                        href="#"
+                        href="https://www.amazon.in/Trading-Strategies-Time-tested-Zebralearn-Categories/dp/8196373570?crid=32IPKM48V3BQF&dib=eyJ2IjoiMSJ9.GC8ccpeOEFK8cy51si7FDHghuaHEuPtK3lncTLC5QaExCQccT6JgbLoithyAxUfX-6taCGH9CW-Q2_vl4lN5prkbmMr97r8kv2xcOev4WZL9PFuFq4cbNkYZj9tSRdXl-8PFfZyNyFSAsxXN8tY6QZAWwpdttS3OLVJ5PsU9SjE9853uOjULiEgXjfc35u9iZrfNCsyCIHaAJeb_jc-bD7IMSv0RNc3cb_okDuNnavM.P5jkF_YiQFSgFmSilcr1lfzapV66ozq766Ro_KtGlgk&dib_tag=se&keywords=51+trading+strategies+book&qid=1738242635&sprefix=51+tradin,aps,271&sr=8-3"
                         className="mt-6 inline-block bg-yellow-400 text-black font-bold py-3 px-6 rounded-lg shadow-md hover:bg-yellow-500 transition"
                     >
-                        ➤ GET YOUR COPY
+                        ➤   {"  "} GET YOUR COPY
                     </a>
                 </div>
             </div>

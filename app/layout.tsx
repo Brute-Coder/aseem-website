@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import { Razorpay } from "@/utils/razorpay";
 
 const poppins = Poppins({ weight: "500", subsets: ["latin"], display: "swap" });
 import Dialogs from "@/components/dialogs";
@@ -19,6 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Dialogs />
+      <Razorpay />
       <body
         className={`${poppins.className} antialiased`}
       >
